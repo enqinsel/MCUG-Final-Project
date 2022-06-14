@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/elektrikmavisi"
+        android:title="Elektrik mavisi"></item>
+
+    <item
+        android:id="@+id/naneyesili"
+        android:title="Nane yeşili"></item>
+
+    <item
+        android:id="@+id/gulrengi"
+        android:title="Gül rengi"></item>
+
+    <item
+        android:id="@+id/ilkbaharyesili"
+        android:title="İlkbahar yeşili"></item>
+
+    <item
+        android:id="@+id/narcicegi"
+        android:title="Nar çiçeği"></item>
+</menu>

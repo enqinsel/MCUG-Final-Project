@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="350dp"
+    android:maxHeight="350dp">
+
+    <TextView
+        android:id="@+id/girisbasarili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="Giriş Başarılı"
+        android:textColor="#009688"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/gecis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/counter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text=""
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/verify"
+        app:layout_constraintStart_toStartOf="@+id/verify"
+        app:layout_constraintTop_toBottomOf="@+id/verify" />
+
+    <TextView
+        android:id="@+id/gecis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:gravity="center"
+        android:text="Uygulamaya Yönlendiriliyorsunuz..."
+        android:textColor="#00DFC9"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-30dp" />
+
+    <ImageView
+        android:id="@+id/verify"
+        android:layout_width="95dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/girisbasarili"
+        app:srcCompat="@drawable/verify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/girisbasarili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="86dp"
+        android:gravity="center"
+        android:text="Giriş Başarılı"
+        android:textColor="#009688"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/gecis"
+        app:layout_constraintStart_toEndOf="@+id/verify"
+        app:layout_constraintTop_toBottomOf="@+id/verify2" />
+
+    <ImageView
+        android:id="@+id/verify"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="223dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisbasarili"
+        app:layout_constraintEnd_toStartOf="@+id/verify2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/verify2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/verify" />
+
+    <ImageView
+        android:id="@+id/verify2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisbasarili"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/verify"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/verify" />
+
+    <TextView
+        android:id="@+id/gecis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:gravity="center"
+        android:text="Uygulamaya Yönlendiriliyorsunuz..."
+        android:textColor="#00DFC9"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/counter2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisbasarili" />
+
+    <TextView
+        android:id="@+id/counter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:text=""
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gecis" />
+</androidx.constraintlayout.widget.ConstraintLayout>

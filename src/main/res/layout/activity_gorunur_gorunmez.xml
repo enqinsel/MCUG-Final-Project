@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7B23E8"
+    tools:context=".GorunurGorunmez">
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="64dp"
+        android:text="Menu ≣"
+        app:layout_constraintBottom_toTopOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Görsellere Tıklayınız"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/rightbuton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <Button
+        android:id="@+id/leftbuton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginBottom="20dp"
+        android:text="Button"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/righttext"
+        app:layout_constraintEnd_toStartOf="@+id/rightbuton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rightbuton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="Button"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/lefttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftbuton"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/righttext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="27dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/leftradio"
+        app:layout_constraintEnd_toStartOf="@+id/lefttext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftbuton" />
+
+    <TextView
+        android:id="@+id/lefttext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/rightradio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/righttext"
+        app:layout_constraintTop_toBottomOf="@+id/rightbuton" />
+
+    <RadioButton
+        android:id="@+id/leftradio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="26dp"
+        android:text="RadioButton"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/leftcheck"
+        app:layout_constraintEnd_toStartOf="@+id/rightradio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/righttext" />
+
+    <RadioButton
+        android:id="@+id/rightradio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="26dp"
+        android:text="RadioButton"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/rightcheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftradio"
+        app:layout_constraintTop_toBottomOf="@+id/lefttext" />
+
+    <CheckBox
+        android:id="@+id/leftcheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="225dp"
+        android:text="CheckBox"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightcheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftradio" />
+
+    <CheckBox
+        android:id="@+id/rightcheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="225dp"
+        android:text="CheckBox"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftcheck"
+        app:layout_constraintTop_toBottomOf="@+id/rightradio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
